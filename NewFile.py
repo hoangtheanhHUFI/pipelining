@@ -23,14 +23,20 @@ btnHello.grid(column= 1,row= 1)
 combo = Combobox(window)
 combo['values'] = ("Cường Thuận", "Thế Anh ", "Tâm Đoàn", " Phước Nhân")
 combo.grid(column=0 , row=2)
-def clicked():
+def bubuoi():
  
-   messagebox.showinfo('Message title', 'Message content' + combo.get())
+   messagebox.showinfo('Ai đẹp trai nhất', 'Người đó là : ' + combo.get())
  
-btn = Button(window,text='Click here', command=clicked)
+btn = Button(window,text='Click here', command=bubuoi)
  
 btn.grid(column=1,row=2)
-
+def clicked():
+    bt = math.concho()
+    messagebox.showinfo('Message title',bt)
+ 
+btn = Button(window,text='hiện ra đi ', command=clicked)
+ 
+btn.grid(column=2,row=3)
 
 window.mainloop()
 #from tkinter import *

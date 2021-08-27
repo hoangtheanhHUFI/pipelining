@@ -3,6 +3,11 @@ class math:
     a=int(input())
   def addB():
     b=int(input())
-  def showC():
+  def showC(a,b):
     c=a+b
-    print(c)
+    return c
+
+  def concho():
+      concho=('hoang the anh') 
+      return concho
+  
