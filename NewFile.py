@@ -1,7 +1,7 @@
 ﻿from tkinter import *
 from tkinter.ttk import *
 import tkinter
-
+//concac
 window = Tk()
 window.title("Pipelining ")
 window.geometry("1920x1080")
