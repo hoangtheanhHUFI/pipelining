@@ -1,5 +1,6 @@
 ﻿from tkinter import *
 from tkinter.ttk import *
+from tkinter import messagebox
 import tkinter
 window = Tk()
 window.title("Pipelining ")
@@ -23,6 +24,7 @@ combo['values'] = ("Cường Thuận", "Thế Anh ", "Tâm Đoàn", " Phước N
 combo.grid(column=0 , row=2)
 def handlebutton1():
     lbl.configure(text= 'chào, ' + combo.get() + ' đẹp trai')
+    #messagebox.showinfo = (" Ai là người đẹp trai ", "Chào" + combo.get())
     return
 # thêm button
 btnHello1 = Button (window,text= "Chọn ", command=handlebutton1)
