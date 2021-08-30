@@ -61,8 +61,27 @@ def getA():
  #thêm button
 btnA= Button (window,text= "Nhập", command=getA)
 btnA.grid(column= 1,row= 1)
+window.mainloop()
 
 
 
 
+from tkinter import*
+import tkinter 
+from math import sqrt
+window = Tk()
+window.title("Chương Trình PIPELINE")
+window.geometry("620x480") # tạo ra cửa sổ  
+# thêm label 
+lbl= tkinter.Label(window, text = " KỸ THUẬT PIPELINE ", fg="blue", font=("times new roman",30) )
+lbl.grid(column = 0 , row = 0)
+# thêm textbox
+txt = Entry (window, width = 5)
+txt.grid(column = 0 , row  = 1 )
+def handlebutton():
+   lbl.configure(text= 'khong ky thuat ')
+   return
+# thêm nút 
+btnnhap = Button(window, text= "Nhập",command=nhap)
+btnnhap.grid(column = 1 , row = 1)
 window.mainloop()
