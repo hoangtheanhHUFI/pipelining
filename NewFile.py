@@ -1,87 +1,33 @@
-﻿#from tkinter import *
-#from tkinter.ttk import *
-#from tkinter import messagebox
-#import tkinter
-#from funtion import math
-#window = Tk()
-#window.title("Pipelining ")
-#window.geometry("400x300")
-# #thêm label 
-#lbl =tkinter.Label(window , text= 'Phần mềm mới chế ', fg="green" , font=("Arial",30))
-#lbl.grid(column = 0 , row = 0 )
-# #thêm textbox
-#txt = Entry(window, width = 20)
-#txt.grid(column=0,row= 1)
-
-#def handlebutton():
-#    lbl.configure(text= 'chào, ' + txt.get() + ' đẹp trai')
-#    return
-# #thêm button
-#btnHello = Button (window,text= "say hello", command=handlebutton)
-#btnHello.grid(column= 1,row= 1)
-# #thêm combobox
-#combo = Combobox(window)
-#combo['values'] = ("Cường Thuận", "Thế Anh ", "Tâm Đoàn", " Phước Nhân")
-#combo.grid(column=0 , row=2)
-#def bubuoi():
- 
-#   messagebox.showinfo('Ai đẹp trai nhất', 'Người đó là : ' + combo.get())
- 
-#btn = Button(window,text='Click here', command=bubuoi)
- 
-#btn.grid(column=1,row=2)
-#def clicked():
-#    bt = math.concho()
-#    messagebox.showinfo('Message title',bt)
- 
-#btn = Button(window,text='hiện ra đi ', command=clicked)
- 
-#btn.grid(column=1,row=3)
-
-
-#window.mainloop()
+﻿
 from tkinter import *
-from tkinter.ttk import *
-from tkinter import messagebox
-import tkinter
-from funtion import math
-window = Tk()
-window.title("Pipelining ")
-window.geometry("400x300")
- #thêm label 
-lbl =tkinter.Label(window , text= 'bài toan ', fg="red" , font=("Arial",30))
-lbl.grid(column = 0 , row = 0 )
-# thêm tét bóc
-A = Entry(window, width = 5)
-A.grid(column=0,row= 1)
-def getA():
-   messagebox.showinfo('A là ', A)
-    
+import funtion 
+root = Tk()
+root.geometry("400x300")
+root.title(" KỸ THUẬT PIPELINING ")
+  
+def Take_input():
+    INPUT = inputtxt.get("1.0", "end-1c")
+    Output.insert(END, funtion.step_by_step(float(INPUT)))
+    Output.insert(END, funtion.pipelining(float(INPUT)))
+      
+l = Label(text = " Nhập số lệnh ")
+inputtxt = Text(root, height = 1,
+                width = 15)
+                
+  
+Output = Text(root, height = 5, 
+              width = 25, 
+              bg = "light cyan")
+  
+Display = Button(root, height = 2,
+                 width = 20, 
+                 text ="Show",
+                 command = lambda:Take_input())
+  
+l.pack()
+inputtxt.pack()
+Display.pack()
+Output.pack()
+  
+mainloop()
 
- #thêm button
-btnA= Button (window,text= "Nhập", command=getA)
-btnA.grid(column= 1,row= 1)
-window.mainloop()
-
-
-
-
-from tkinter import*
-import tkinter 
-from math import sqrt
-window = Tk()
-window.title("Chương Trình PIPELINE")
-window.geometry("620x480") # tạo ra cửa sổ  
-# thêm label 
-lbl= tkinter.Label(window, text = " KỸ THUẬT PIPELINE ", fg="blue", font=("times new roman",30) )
-lbl.grid(column = 0 , row = 0)
-# thêm textbox
-txt = Entry (window, width = 5)
-txt.grid(column = 0 , row  = 1 )
-def handlebutton():
-   lbl.configure(text= 'khong ky thuat ')
-   return
-# thêm nút 
-btnnhap = Button(window, text= "Nhập",command=nhap)
-btnnhap.grid(column = 1 , row = 1)
-window.mainloop()

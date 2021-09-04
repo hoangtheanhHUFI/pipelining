@@ -1,5 +1,4 @@
 from math import pow
-#n=30
 time_1_lenh=22*pow(10,-9)
 time_1_congdoan=5*pow(10,-9)
 def step_by_step(n):
